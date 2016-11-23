@@ -25,7 +25,9 @@
         <module name="biz" />
         <module name="registry" />
         <module name="service.consumer" />
+        <module name="service.gateway" />
         <module name="service.provider" />
+        <module name="service.webservice" />
         <module name="web" />
       </profile>
     </annotationProcessing>
@@ -35,7 +37,9 @@
       <module name="etrading.all" target="1.6" />
       <module name="registry" target="1.6" />
       <module name="service.consumer" target="1.6" />
+      <module name="service.gateway" target="1.6" />
       <module name="service.provider" target="1.6" />
+      <module name="service.webservice" target="1.6" />
       <module name="web" target="1.6" />
     </bytecodeTargetLevel>
   </component>

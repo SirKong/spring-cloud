@@ -10,6 +10,7 @@
         <module>service.provider</module>
         <module>service.registry</module>
         <module>service.webservice</module>
+        <module>service.gateway</module>
     </modules>
     <packaging>pom</packaging>
 
