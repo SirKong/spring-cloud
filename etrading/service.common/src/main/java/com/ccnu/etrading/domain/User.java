@@ -1,4 +1,4 @@
-package com.ccnu.etrading.provider.domain;
+package com.ccnu.etrading.domain;
 
 import java.io.Serializable;
 

@@ -1,6 +1,6 @@
 package com.ccnu.etrading.provider.service;
 
-import com.ccnu.etrading.provider.domain.User;
+import com.ccnu.etrading.domain.User;
 
 public interface UserService {
 

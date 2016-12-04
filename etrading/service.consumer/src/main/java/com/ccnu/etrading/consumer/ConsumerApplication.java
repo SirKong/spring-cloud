@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableCircuitBreaker
-public class Application {
+public class ConsumerApplication {
 	@Bean
 	@LoadBalanced
 	RestTemplate restTemplate() {
@@ -22,7 +22,7 @@ public class Application {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(ConsumerApplication.class, args);
 	}
 
 }
