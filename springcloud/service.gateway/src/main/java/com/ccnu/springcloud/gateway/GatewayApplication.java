@@ -9,9 +9,9 @@ import com.ccnu.springcloud.gateway.filters.AccessFilter;
 
 @EnableZuulProxy
 @SpringCloudApplication
-public class Application {
+public class GatewayApplication {
 	public static void main(String[] args) {
-		new SpringApplicationBuilder(Application.class).web(true).run(args);
+		new SpringApplicationBuilder(GatewayApplication.class).web(true).run(args);
 	}
 	
 	@Bean

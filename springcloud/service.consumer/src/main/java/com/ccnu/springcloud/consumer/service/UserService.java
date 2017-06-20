@@ -21,7 +21,19 @@ public class UserService {
     public String addUser(User user) {
 
         try {
-            return restTemplate.postForObject("http://SERVICE.PROVIDER/user/add", user, String.class);
+            return restTemplate.postForObject("http://PROVIDER/user/add", user, String.class);
+        } catch (Exception e) {
+            logger.error("UserService.addUser error" + e);
+            return null;
+        }
+    }
+
+    public User getUser(Long id) {
+
+        try {
+
+            return restTemplate.getForObject("http://PROVIDER/user/get/" + id, User.class);
+            //return restTemplate.postForObject("http://PROVIDER/user/add", user, String.class);
         } catch (Exception e) {
             logger.error("UserService.addUser error" + e);
             return null;

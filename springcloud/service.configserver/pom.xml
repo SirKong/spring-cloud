@@ -7,10 +7,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>service.provider</artifactId>
+    <artifactId>service.configserver</artifactId>
     <packaging>jar</packaging>
 
-    <name>service.provider</name>
+    <name>service.configserver</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -25,26 +25,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>1.1.1</version>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.21</version>
-        </dependency>
-        <dependency>
-            <groupId>com.ccnu.springcloud</groupId>
-            <artifactId>service.common</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.15</version>
+            <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
     </dependencies>
     <dependencyManagement>

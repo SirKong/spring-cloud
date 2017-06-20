@@ -12,6 +12,7 @@
         <module>service.webservice</module>
         <module>service.gateway</module>
         <module>service.common</module>
+        <module>service.configserver</module>
     </modules>
     <packaging>pom</packaging>
 

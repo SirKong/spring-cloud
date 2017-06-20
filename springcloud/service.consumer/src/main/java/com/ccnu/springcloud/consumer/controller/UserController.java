@@ -5,6 +5,7 @@ import com.ccnu.springcloud.domain.User;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -26,6 +27,11 @@ public class UserController {
         user.setAge(Integer.parseInt(age));
         user.setName(name);
         return userService.addUser(user);
+    }
+
+    @RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
+    public User getUser(@PathVariable Long id) {
+        return userService.getUser(id);
     }
 
     public String fallback(String name, String age) {
